@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -28,10 +33,163 @@
   color: #61dafb;
 }
 
+.buy-now-btn {
+  background-color: #5fbdc1;
+  border: none;
+  border: 1px solid #5fbdc1;
+}
+
+.buy-now-btn:hover {
+  color: #5fbdc1;
+  background-color: white;
+  border: 1px solid #5fbdc1;
+}
+
+.bg-dark {
+  background-color: black !important;
+}
+
+.logo {
+  max-width: 50% !important;
+}
+
+.cart-icon {
+  color: white !important;
+}
+
+.fa-cart-shopping {
+  margin-left: 30px;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+/* Initially hide the cart dropdown */
+.cart-dropdown {
+  display: none;
+}
+
+/* CartDropdown.css */
+.cart-dropdown {
+  position: absolute;
+  top: 15%;
+  max-width: 50%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.img-fluid {
+  border-radius: 4px;
+}
+
+.card-img-dpdown img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.rounded-circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50% !important;
+  bottom: 50%;
+  left: 85%;
+  background-color: #5fbdc1;
+}
+
+.price-txt {
+  color: #EB5757;
+  font-weight: bold;
+}
+
+
+.collection-card .card {
+  border: none !important;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1) !important;
+}
+
+.buy-now-btn:active {
+  background-color: transparent;
+}
+
+.form-control {
+  border: 1px solid #f2f5f7 !important;
+  font-weight: bold;
+}
+
+option {
+  padding: 2px !important;
+  min-height: 1.4rem;
+
+}
+
+.logo-wr {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.category-filter {
+  width: 41%;
+}
+
+.detail-img {
+  max-height: 250px;
+  border-radius: 4px;
+  padding-right: 20px !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: transparent !important;
+  color: black;
+}
+
+.accordion-item {
+  border-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #E0E0E0;
+}
+.dropdown-header{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.dropdown-header,
+.dropdown-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.payment-section{
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  padding: 20px;
+  margin-left: 30px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
